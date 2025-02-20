@@ -10,7 +10,7 @@ import { Paper } from '@mui/material'
 import Post from '@/app/_Components/Post/Post'
 import Loading from '@/app/Loading'
 
-export default function SinglePost(props:{params:{id:string}}) {
+export default function SinglePost(props:{params:{id:any}}) {
     let dispatch=useDispatch<dispatchType>()
   const {isLoading,singlePost,getAllCommentsLoader}=  useSelector((store:storeType)=>store.postReducer)
       useEffect(()=>{
